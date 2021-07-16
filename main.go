@@ -7,6 +7,11 @@ import (
 	"os/exec"
 )
 
+// kept to try out unit testing
+func HelloWorld() string {
+	return "hello world"
+}
+
 func Alert() {
 	out, err := exec.Command("/bin/sh", "./notify.sh").Output()
     if err != nil {
